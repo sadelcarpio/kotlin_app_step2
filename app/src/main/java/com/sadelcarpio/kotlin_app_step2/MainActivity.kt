@@ -18,5 +18,11 @@ class MainActivity : AppCompatActivity() { //punto de entrada de la aplicación
             // (como si fuera un anuncio breve, toast message)
             Toast.makeText(this, "Button was clicked !", Toast.LENGTH_SHORT).show()
         }
+
+        btnSendMsgToNextActivity.setOnClickListener {
+            Toast.makeText(this, "Second Button was clicked !", Toast.LENGTH_SHORT).show()
+
+            val message: String = etUserMessage.text.toString() //convierte el texto ingresado a string
+        }
     }
 }
