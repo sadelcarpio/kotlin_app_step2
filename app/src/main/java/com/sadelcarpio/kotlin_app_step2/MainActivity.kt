@@ -1,5 +1,6 @@
 package com.sadelcarpio.kotlin_app_step2
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -20,9 +21,13 @@ class MainActivity : AppCompatActivity() { //punto de entrada de la aplicación
         }
 
         btnSendMsgToNextActivity.setOnClickListener {
-            Toast.makeText(this, "Second Button was clicked !", Toast.LENGTH_SHORT).show()
-
             val message: String = etUserMessage.text.toString() //convierte el texto ingresado a string
+            Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+
+            val intent = Intent(this, SecondActivity::class.java) //intento de pasar de una
+            //actividad a otra, con ::class.java se llama a una clase de java en kotlin (?)
+            startActivity(intent)
+
         }
     }
 }

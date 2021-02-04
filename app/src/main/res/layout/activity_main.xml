@@ -27,10 +27,9 @@
         android:id="@+id/etUserMessage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="246dp"
+        android:layout_marginTop="250dp"
         android:ems="10"
         android:hint="Escribe un mensaje" />
 
@@ -38,8 +37,8 @@
         android:id="@+id/btnSendMsgToNextActivity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="328dp"
+        android:layout_marginTop="312dp"
         android:text="Mandar Datos a la Siguiente Actividad" />
 </RelativeLayout>
