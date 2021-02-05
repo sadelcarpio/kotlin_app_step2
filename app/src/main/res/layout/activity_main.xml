@@ -17,7 +17,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
-        android:text="Mostrar Toast" />
+        android:text="@string/mostrar_toast" />
 
 
     <!--se cambió text por hint -->
@@ -31,8 +31,10 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="250dp"
         android:ems="10"
-        android:hint="Escribe un mensaje" />
-
+        android:hint="@string/escribe_un_mensaje"
+        android:inputType="text"
+        android:autofillHints="" />
+<!-- inputType especifica el tipo de dato para adaptar el teclado -->
     <Button
         android:id="@+id/btnSendMsgToNextActivity"
         android:layout_width="match_parent"
@@ -40,7 +42,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="312dp"
-        android:text="Mandar Datos a la Siguiente Actividad" />
+        android:text="@string/mandar_datos_a_la_siguiente_actividad" />
 
     <Button
         android:id="@+id/btnShare"
@@ -49,5 +51,5 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="236dp"
-        android:text="Compartir" />
+        android:text="@string/compartir" />
 </RelativeLayout>

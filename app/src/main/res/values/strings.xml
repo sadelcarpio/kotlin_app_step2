@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">kotlin_app_step2</string>
+    <string name="textview">TextView</string>
+    <string name="mostrar_toast">Mostrar Toast</string>
+    <string name="escribe_un_mensaje">Escribe un mensaje</string>
+    <string name="mandar_datos_a_la_siguiente_actividad">Mandar Datos a la Siguiente Actividad</string>
+    <string name="compartir">Compartir</string>
 </resources>
