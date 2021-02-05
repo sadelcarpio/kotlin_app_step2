@@ -5,4 +5,5 @@
     <string name="escribe_un_mensaje">Escribe un mensaje</string>
     <string name="mandar_datos_a_la_siguiente_actividad">Mandar Datos a la Siguiente Actividad</string>
     <string name="compartir">Compartir</string>
+    <string name="demo_recycler_view">Demo Recycler View</string>
 </resources>

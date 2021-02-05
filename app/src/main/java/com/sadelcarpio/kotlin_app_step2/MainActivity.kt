@@ -42,5 +42,10 @@ class MainActivity : AppCompatActivity() { //punto de entrada de la aplicación
 
             startActivity(Intent.createChooser(intent, "Compartir en :")) //muestra la ventana de compartir
         }
+
+        btnRecyclerViewDemo.setOnClickListener {
+            val intent = Intent(this, HobbiesActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
