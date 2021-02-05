@@ -31,7 +31,16 @@ class MainActivity : AppCompatActivity() { //punto de entrada de la aplicación
 
             startActivity(intent) //Explicit intent, este comando solo pasa a la siguiente actividad, no
             //pasa los datos
+        }
 
+        btnShare.setOnClickListener {
+            val message: String = etUserMessage.text.toString() //convierte el texto ingresado a string
+            val intent = Intent()  //no tiene argumentos porque no sabemos a dónde nos llevará
+            intent.action = Intent.ACTION_SEND //propiedad de enviar
+            intent.putExtra(Intent.EXTRA_TEXT, message) //el key predefinido es Intent.EXTRA_TEXT
+            intent.type = "text/plain" //tipo de dato
+
+            startActivity(Intent.createChooser(intent, "Compartir en :")) //muestra la ventana de compartir
         }
     }
 }

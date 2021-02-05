@@ -41,4 +41,13 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="312dp"
         android:text="Mandar Datos a la Siguiente Actividad" />
+
+    <Button
+        android:id="@+id/btnShare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="236dp"
+        android:text="Compartir" />
 </RelativeLayout>
