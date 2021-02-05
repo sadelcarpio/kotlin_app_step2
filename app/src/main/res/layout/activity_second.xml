@@ -3,6 +3,19 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation = "vertical">
+    android:orientation = "horizontal">
 <!-- Linear Layout da orientación lineal -->
+    <TextView
+        android:id="@+id/txvUserMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#673AB7"
+        android:textAlignment="center"
+        android:layout_margin="20dp"
+        android:text="TextView" />
+<!-- con textSize se cambia el tamaño de texto :o
+ entre otros parámetros como Style, Color, Alignment,
+ margin -->
 </LinearLayout>

@@ -22,11 +22,15 @@ class MainActivity : AppCompatActivity() { //punto de entrada de la aplicación
 
         btnSendMsgToNextActivity.setOnClickListener {
             val message: String = etUserMessage.text.toString() //convierte el texto ingresado a string
-            Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
 
             val intent = Intent(this, SecondActivity::class.java) //intento de pasar de una
             //actividad a otra, con ::class.java se llama a una clase de java en kotlin (?)
-            startActivity(intent)
+
+            intent.putExtra("user_message", message) //key (primer argumento) es un identificador
+
+            startActivity(intent) //Explicit intent, este comando solo pasa a la siguiente actividad, no
+            //pasa los datos
 
         }
     }
